@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ECDLPProtocol UI</title>
+  <style>
+    /* Estilos CSS para la interfaz de usuario */
+    /* Agrega tus estilos personalizados aquí */
+    body {
+      font-family: "Cursive", cursive;
+      background-color: #e6f2ff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555555;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      background-color: #ffffff;
+      margin-bottom: 10px;
+      font-family: inherit;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #c69bd4;
+      color: #ffffff;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #c69bd4;
+    }
+
+    a {
+      text-decoration: none;
+      color: #c69bd4;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ECDLPProtocol</h1>
+  <label for="privateKey">Clave Privada:</label>
+  <input type="text" id="privateKey" readonly>
+  <br>
+  <label for="publicKey">Clave publica:</label>
+  <input type="text" id="publicKey" readonly>
+  <br>
+  <button onclick="generateKeys()">Generar claves</button>
+  <a href="index.html">Pagina principal</a>
+
+  <script src="protocolo.js"></script>
+</body>
+</html>

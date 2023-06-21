@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ECDL</title>
+  <style>
+    
+    body {
+      font-family: "Cursive", cursive;
+      background-color: #e6f2ff; /* Color azul claro */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1,
+    h2,
+    p {
+      opacity: 0; /* Inicialmente, ocultar los elementos */
+      transition: opacity 5s ease-in-out; /* Transición de opacidad gradual */
+    }
+
+    /* Agregar una clase a los elementos para mostrarlos uno por uno */
+    .fade-in {
+      opacity: 1;
+    }
+
+    /* Retrasar la aparición de cada elemento */
+    .fade-in:nth-child(1) {
+      transition-delay: 0.2s;
+    }
+
+    .fade-in:nth-child(2) {
+      transition-delay: 0.4s;
+    }
+
+    .fade-in:nth-child(3) {
+      transition-delay: 0.6s;
+    }
+
+    /* Estilos personalizados para los enlaces */
+    .link-container {
+      display: flex;
+      justify-content: space-between;
+      width: 500px;
+      margin-top: 20px;
+    }
+
+    .link-container a {
+      text-decoration: none;
+      color: #000;
+      padding: 10px 20px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .link-container a:hover {
+      background-color: #c69bd4; /* Color lila */
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="fade-in">Criptomoneda basada en una autoridad central</h1>
+  <h2 class="fade-in">Protocolo basado en curvas elípticas</h2>
+  
+  <p class="fade-in">Elige la opción que desees</p>
+
+  <div class="link-container fade-in">
+    <div>
+      <a href="protocolo.html">Problema del Logaritmo Discreto de Curva Elíptica (ECDLP)</a>
+    </div>
+  </div>
+
+  <div class="link-container fade-in">
+    <div>
+      <a href="setup.html">Sistema de pago</a>
+    </div>
+  </div>
+
+  <script>
+    // Agregar la clase 'fade-in' a los elementos uno por uno
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach((element, index) => {
+      setTimeout(() => {
+        element.classList.add('fade-in');
+      }, index * 200);
+    });
+  </script>
+</body>
+</html>

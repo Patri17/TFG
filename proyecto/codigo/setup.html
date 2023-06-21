@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SET-UP</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/elliptic/6.5.4/elliptic.min.js"></script>
+  
+  
+  <script src = "bn.js"></script>
+  <script src="setup.js"></script>
+  <style>
+    
+    
+    body {
+      font-family: "Cursive", cursive;
+      background-color: #e6f2ff;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #333333;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #555555;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: #c69bd4;
+      color: #ffffff;
+      font-family: inherit;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    button:hover {
+      background-color: #c69bd4;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #555555;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      background-color: #ffffff;
+      margin-bottom: 10px;
+      font-family: inherit;
+    }
+
+    a {
+      text-decoration: none;
+      color: #c69bd4;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>B:</h1>
+  <h2>Generacion de P, P1 y P2</h2>
+  <button onclick="generateAndDisplayPointP()">Generate Point P</button>
+  <button onclick="borrarNumero()">Borrar</button>
+  <br>
+  <label for="result">P Point:</label>
+  <input type="text" id="result" readonly>
+  <br>
+  
+
+  
+  <button onclick="generateAndDisplayPointP1()">Generate Point P1</button>
+  <br>
+  <label for="result1">P1 Point:</label>
+  <input type="text" id="result1" readonly>
+  <br>
+  <button onclick="generateAndDisplayPointP2()">Generate Point P2</button>
+  <br>
+  <label for="result2">P2 Point:</label>
+  <input type="text" id="result2" readonly>
+  <br>
+  <h2>Generacion del exponente secreto z</h2>
+  <button onclick="generateAndDisplayScalar()">Generate z</button>
+  <br>
+  <label for="result3">z:</label>
+  <input type="text" id="result3" readonly>
+  <br>
+  <h2>Generacion de Q, Q1 y Q2: Claves publicas y privadas</h2>
+  <button onclick="generateMultiply()">Generate Q</button>
+  <br>
+  <label for="result4">Q Point:</label>
+  <input type="text" id="result4" readonly>
+  <br>
+  <button onclick="generateMultiply1()">Generate Q1</button>
+  <br>
+  <label for="result5">Q1 Point:</label>
+  <input type="text" id="result5" readonly>
+  <br>
+  <button onclick="generateMultiply2()">Generate Q2</button>
+  <br>
+  <label for="result6">Q2 Point:</label>
+  <input type="text" id="result6" readonly>
+  <br>
+  <h1>U:</h1>
+  <br>
+  <h2>Generacion del exponente secreto u1</h2>
+  <button onclick="generateAndDisplayScalar2()">Generate u1</button>
+  <br>
+  <label for="result7">u1:</label>
+  <input type="text" id="result7" readonly>
+  <br>
+  <h2>Generacion del numero de cuenta: </h2>
+  <button onclick="generateMultiplyIu()">Generate numero de cuenta:</button>
+  <br>
+  <label for="result8">Numero de cuenta:</label>
+  <input type="text" id="result8" readonly>
+  <br>
+  <h2>Numero de cuenta modificado: </h2>
+  <button onclick="generateSumaI()">Generate numero de cuenta modificado:</button>
+  <br>
+  <label for="result9">Numero de cuenta modificado:</label>
+  <input type="text" id="result9" readonly>
+  <br>
+  
+  <h2>Verificacion: </h2>
+  <button onclick="generateComparacion()">Generate Verificacion:</button>
+  <br>
+  <label for="result12">Verificacion:</label>
+  <input type="text" id="result12" readonly>
+  <br>
+  <a href="firma.html">Firma de la moneda</a>
+  <br>
+  
+  
+
+
+</body>
+</html>

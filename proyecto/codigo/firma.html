@@ -9,8 +9,7 @@
   <script src = "bn.js"></script>
   <script src="firma.js"></script>
   <style>
-    /* Estilos CSS para la interfaz de usuario */
-    /* Agrega tus estilos personalizados aquí */
+    
     body {
       font-family: "Cursive", cursive;
       background-color: #e6f2ff;
@@ -65,92 +64,92 @@
 </head>
 
 <body>
-    <h1>Generacion de A y B pertenecientes a G</h1>
-    <h2>Generacion de A:</h2>
-    <button onclick="generateAndDisplayA()">Generate A</button>
+    <h1>Firma de la moneda</h1>
+    <h2>Se genera A:</h2>
+    <button onclick="generateAndDisplayA()">A</button>
     <br>
     <label for="result">A:</label>
     <input type="text" id="result" readonly>
     <br>
-    <h2>Generacion de B:</h2>
-    <button onclick="generateAndDisplayB()">Generate B</button>
+    <h2>Se genera B:</h2>
+    <button onclick="generateAndDisplayB()">B</button>
     <br>
     <label for="result1">B:</label>
     <input type="text" id="result1" readonly>
     <br>
-    <h2>Generacion de C':</h2>
-    <button onclick="generateAndDisplayC()">Generate C'</button>
+    <h2>Se genera C':</h2>
+    <button onclick="generateAndDisplayC()"> C'</button>
     <br>
     <label for="result2">C':</label>
     <input type="text" id="result2" readonly>
     <br>
-    <h2>Generacion de R:</h2>
-    <button onclick="generateAndDisplayR()">Generate R</button>
+    <h2>Se genera R:</h2>
+    <button onclick="generateAndDisplayR()">R</button>
     <br>
     <label for="result3">R:</label>
     <input type="text" id="result3" readonly>
     <br>
-    <h2>Generacion de S:</h2>
-    <button onclick="generateAndDisplayS()">Generate S</button>
+    <h2>Se genera S:</h2>
+    <button onclick="generateAndDisplayS()">S</button>
     <br>
     <label for="result4">S:</label>
     <input type="text" id="result4" readonly>
     <br>
-    <h2>Generacion de y:</h2>
-    <button onclick="generateAndDisplayy()">Generate y</button>
+    <h2>Se genera y:</h2>
+    <button onclick="generateAndDisplayy()">y</button>
     <br>
     <label for="result5">y:</label>
     <input type="text" id="result5" readonly>
     <br>
-    <h2>Generacion de H:</h2>
-    <button onclick="generateAndDisplayH()">Generate H</button>
+    <h2>Se genera H:</h2>
+    <button onclick="generateAndDisplayH()">H</button>
     <br>
     <label for="result6">H:</label>
     <input type="text" id="result6" readonly>
     <br>
-    <h2>Generacion de P:</h2>
-    <button onclick="generateAndDisplayPointP()">Generate P</button>
+    <h2>Se genera P:</h2>
+    <button onclick="generateAndDisplayPointP()">P</button>
     <br>
     <label for="result7">P:</label>
     <input type="text" id="result7" readonly>
     <br>
-    <h2>Generacion de z para calcular Q:</h2>
-    <button onclick="generateAndDisplayScalar()">Generate z</button>
+    <h2>Se genera z para calcular Q:</h2>
+    <button onclick="generateAndDisplayScalar()">z</button>
     <br>
     <label for="result9">z:</label>
     <input type="text" id="result9" readonly>
     <br>
-    <h2>Generacion de Q:</h2>
-    <button onclick="generateMultiply()">Generate Q</button>
+    <h2>Se calcula Q:</h2>
+    <button onclick="generateMultiply()">Q</button>
     <br>
     <label for="result8">Q:</label>
     <input type="text" id="result8" readonly>
     <br>
     <h2>Comprobar que yP=HQ + R:</h2>
     <h3>Calculamos primero yP:</h3>
-    <button onclick="generateyP()">Generate yP</button>
+    <button onclick="generateyP()">yP</button>
     <br>
     <label for="result10">yp:</label>
     <input type="text" id="result10" readonly>
     <br>
     <h3>Calculamos HQ+R:</h3>
-    <button onclick="generatehq()">Generate HQ+R </button>
+    <button onclick="generatehq()">HQ+R </button>
     <br>
-    <label for="result11">HQ:</label>
+    <label for="result11">HQ+R:</label>
     <input type="text" id="result11" readonly>
     <br>
     
     <h2>Comprobar que yA=HC + S:</h2>
     <h3>Calculamos primero yA:</h3>
-    <button onclick="generateyA()">Generate yA</button>
+    <button onclick="generateyA()">yA</button>
     <br>
-    <label for="result13">yp:</label>
+    <label for="result13">yA:</label>
     <input type="text" id="result13" readonly>
     <br>
     <h3>Calculamos HC+S:</h3>
-    <button onclick="generatehc()">Generate hc+s:</button>
+    <button onclick="generatehc()"> HC+S:</button>
     <br>
-    <label for="result14">yp:</label>
+    <label for="result14">HC+S:</label>
     <input type="text" id="result14" readonly>
     <br>
     
@@ -158,7 +157,7 @@
     <h3>Firma:</h3>
     <button onclick="generateComparacion()">Firma:</button>
     <br>
-    <label for="result16">yp:</label>
+    <label for="result16">Firma:</label>
     <input type="text" id="result16" readonly>
     <br>
     <a href="retirada.html">Retirada de la moneda</a>

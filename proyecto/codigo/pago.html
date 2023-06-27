@@ -10,8 +10,7 @@
   <script src= "pago.js"></script>
 
   <style>
-    /* Estilos CSS para la interfaz de usuario */
-    /* Agrega tus estilos personalizados aquí */
+    
     body {
       font-family: "Cursive", cursive;
       background-color: #e6f2ff;
@@ -68,110 +67,110 @@
 
 <body>
     <h1>Pago</h1>
-    <p> U quiere pagar a M: le envia su par (A, B), su firma (C', R', S') e y' para verificar la firma</p>
+    <p> U quiere pagar a M: le envía su par (A, B), su firma (C', R', S') e y' para verificar la firma</p>
     <h2> Calculamos I' que será el numero de cuenta del comerciante:</h2>
     <br>
-    <button onclick="generateAndDisplayScalar()">Generate u1:</button>
+    <button onclick="generateAndDisplayScalar()">Genera u1:</button>
     <br>
-    <label for="result1">Generate u1</label>
+    <label for="result1">u1</label>
     <input type="text" id="result1" readonly>
     <br>
-    <button onclick="generateAndDisplayPointP()">Generate P:</button>
+    <button onclick="generateAndDisplayPointP()">Genera P:</button>
     <br>
-    <label for="result2">Generate P</label>
+    <label for="result2">P</label>
     <input type="text" id="result2" readonly>
     <br>
-    <button onclick="generateMultiplyI()">Generate I':</button>
+    <button onclick="generateMultiplyI()">I':</button>
     <br>
-    <label for="result3">VGenerate I</label>
+    <label for="result3">I</label>
     <input type="text" id="result3" readonly>
     <br>
-    <button onclick="generatehora()">Generate fecha y hora:</button>
+    <button onclick="generatehora()">Genera fecha y hora:</button>
     <br>
-    <label for="result4">Generate fecha y hora</label>
+    <label for="result4">Genera fecha y hora</label>
     <input type="text" id="result4" readonly>
     <br>
-    <button onclick="generateAndDisplayH()">Generate h0:</button>
+    <button onclick="generateAndDisplayH()">Genera h0:</button>
     <br>
-    <label for="result5">Generate h0</label>
+    <label for="result5">Genera h0</label>
     <input type="text" id="result5" readonly>
     <br>
     <h4>Recordemos que Î= I+P2 e I=u1P1</h4>
-    <br><button onclick="generateAndDisplayScalaru1()">Generate u1</button>
+    <br><button onclick="generateAndDisplayScalaru1()">Genera u1</button>
     <br>
     <label for="result6">u1:</label>
     <input type="text" id="result6" readonly>
     <br>
-    <button onclick="generateAndDisplayPointP1()">Generate P1</button>
+    <button onclick="generateAndDisplayPointP1()">Genera P1</button>
     <br>
     <label for="result7">P1:</label>
     <input type="text" id="result7" readonly>
     <br>
-    <button onclick="generateMultiplyIu()">Generate I:</button>
+    <button onclick="generateMultiplyIu()">Genera I:</button>
     <br>
     <label for="result8">I:</label>
     <input type="text" id="result8" readonly>
     <br>
-    <button onclick="generateAndDisplayPointP2()">Generate P2:</button>
+    <button onclick="generateAndDisplayPointP2()">Genera P2:</button>
     <br>
     <label for="result9">P2:</label>
     <input type="text" id="result9" readonly>
     <br>
-    <button onclick="generateSumaI()">Generate Î:</button>
+    <button onclick="generateSumaI()">Genera Î:</button>
     <br>
     <label for="result10">Î:</label>
     <input type="text" id="result10" readonly>
     <br>
     <h2>U elige s, t1, t2. Calcula A= sÎ y B=t1P1 + t2P2</h2>
     <br>
-    <button onclick="generateAndDisplays()">Generate s:</button>
+    <button onclick="generateAndDisplays()">Genera s:</button>
     <br>
     <label for="result11">s:</label>
     <input type="text" id="result11" readonly>
     <br>
-    <button onclick="generateAndDisplayt1()">Generate t1:</button>
+    <button onclick="generateAndDisplayt1()">Genera t1:</button>
     <br>
     <label for="result12">t1:</label>
     <input type="text" id="result12" readonly>
     <br>
-    <button onclick="generateAndDisplayt2()">Generate t2:</button>
+    <button onclick="generateAndDisplayt2()">Genera t2:</button>
     <br>
     <label for="result13">t2:</label>
     <input type="text" id="result13" readonly>
     <br>
-    <button onclick="generatedA()">Generate A:</button>
+    <button onclick="generatedA()">Genera A:</button>
     <br>
     <label for="result14">A:</label>
     <input type="text" id="result14" readonly>
     <br>
-    <button onclick="generatedtp1()">Generate t1P1:</button>
+    <button onclick="generatedtp1()">Genera t1P1:</button>
     <br>
     <label for="result15">t1P1:</label>
     <input type="text" id="result15" readonly>
     <br>
-    <button onclick="generatedtp2()">Generate t2P2:</button>
+    <button onclick="generatedtp2()">Genera t2P2:</button>
     <br>
     <label for="result16">t2P2:</label>
     <input type="text" id="result16" readonly>
     <br>
-    <button onclick="generatedB()">Generate B:</button>
+    <button onclick="generatedB()">Genera B:</button>
     <br>
     <label for="result17">B:</label>
     <input type="text" id="result17" readonly>
     <br>
-    <button onclick="generatey1()">Generate y1:</button>
+    <button onclick="generatey1()">Genera y1:</button>
     <br>
     <label for="result18">y1:</label>
     <input type="text" id="result18" readonly>
     <br>
-    <button onclick="generatey2()">Generate y2:</button>
+    <button onclick="generatey2()">Genera y2:</button>
     <br>
     <label for="result19">y2:</label>
     <input type="text" id="result19" readonly>
     <br>
-    <button onclick="generateComparacion()">Generate verificar:</button>
+    <button onclick="generateComparacion()">Verificar:</button>
     <br>
-    <label for="result20">y2:</label>
+    <label for="result20">Verificar:</label>
     <input type="text" id="result20" readonly>
     <br>
     <p> Tras esto, M envia a B el par (A,B) con su firma (C', R', S')e y' junto a y1, y2 y d. B verifica la firma de la manera que hemos visto y verifica (comparacion). Si se cumple, B acepta provisionalmente el deposito a falta de comprobar que no se ha depositado ya previamente</p>

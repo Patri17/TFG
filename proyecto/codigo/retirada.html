@@ -67,18 +67,18 @@
 
     <p> B recibe un mensaje digitalmente firmado por U diciendo que quiere retirar una moneda</p>
     <br>
-    <h2>B envia a U: w, R, S</h2>
-    <button onclick="generateAndDisplayw()">Generate w</button>
+    <h2>B envía a U: w, R, S</h2>
+    <button onclick="generateAndDisplayw()">Genera w</button>
     <br>
     <label for="result">w:</label>
     <input type="text" id="result" readonly>
     <br>
-    <button onclick="generateAndDisplayPointP()">Generate P:</button>
+    <button onclick="generateAndDisplayPointP()">Genera P:</button>
     <br>
     <label for="result1">P:</label>
     <input type="text" id="result1" readonly>
     <br>
-    <button onclick="generatedR()">Generate R=wP</button>
+    <button onclick="generatedR()">Calcular R=wP</button>
     <br>
     <label for="result2">R:</label>
     <input type="text" id="result2" readonly>
@@ -86,69 +86,69 @@
     <h3> Calculamos S=wÎ</h3>
     <br>
     <h4>Recordemos que Î= I+P2 e I=u1P1</h4>
-    <br><button onclick="generateAndDisplayScalaru1()">Generate u1</button>
+    <br><button onclick="generateAndDisplayScalaru1()">Genera u1</button>
     <br>
     <label for="result3">u1:</label>
     <input type="text" id="result3" readonly>
     <br>
-    <button onclick="generateAndDisplayPointP1()">Generate P1</button>
+    <button onclick="generateAndDisplayPointP1()">Genera P1</button>
     <br>
     <label for="result4">P1:</label>
     <input type="text" id="result4" readonly>
     <br>
-    <button onclick="generateMultiplyIu()">Generate I:</button>
+    <button onclick="generateMultiplyIu()">Genera I:</button>
     <br>
     <label for="result5">I:</label>
     <input type="text" id="result5" readonly>
     <br>
-    <button onclick="generateAndDisplayPointP2()">Generate P2:</button>
+    <button onclick="generateAndDisplayPointP2()">Genera P2:</button>
     <br>
     <label for="result6">P2:</label>
     <input type="text" id="result6" readonly>
     <br>
-    <button onclick="generateSumaI()">Generate Î:</button>
+    <button onclick="generateSumaI()">Genera Î:</button>
     <br>
     <label for="result7">Î:</label>
     <input type="text" id="result7" readonly>
     <br>
-    <button onclick="generatedS()">Generate S:</button>
+    <button onclick="generatedS()">Genera S:</button>
     <br>
     <label for="result8">S:</label>
     <input type="text" id="result8" readonly>
     <br>
     <h2>U elige s, t1, t2. Calcula A= sÎ y B=t1P1 + t2P2</h2>
     <br>
-    <button onclick="generateAndDisplays()">Generate s:</button>
+    <button onclick="generateAndDisplays()">Genera s:</button>
     <br>
     <label for="result9">s:</label>
     <input type="text" id="result9" readonly>
     <br>
-    <button onclick="generateAndDisplayt1()">Generate t1:</button>
+    <button onclick="generateAndDisplayt1()">Genera t1:</button>
     <br>
     <label for="result10">t1:</label>
     <input type="text" id="result10" readonly>
     <br>
-    <button onclick="generateAndDisplayt2()">Generate t2:</button>
+    <button onclick="generateAndDisplayt2()">Genera t2:</button>
     <br>
     <label for="result11">t2:</label>
     <input type="text" id="result11" readonly>
     <br>
-    <button onclick="generatedA()">Generate A:</button>
+    <button onclick="generatedA()">Genera A:</button>
     <br>
     <label for="result12">A:</label>
     <input type="text" id="result12" readonly>
     <br>
-    <button onclick="generatedtp1()">Generate t1P1:</button>
+    <button onclick="generatedtp1()">Genera t1P1:</button>
     <br>
     <label for="result13">t1P1:</label>
     <input type="text" id="result13" readonly>
     <br>
-    <button onclick="generatedtp2()">Generate t2P2:</button>
+    <button onclick="generatedtp2()">Genera t2P2:</button>
     <br>
     <label for="result14">t2P2:</label>
     <input type="text" id="result14" readonly>
     <br>
-    <button onclick="generatedB()">Generate B:</button>
+    <button onclick="generatedB()">Genera B:</button>
     <br>
     <label for="result15">B:</label>
     <input type="text" id="result15 " readonly>
@@ -156,102 +156,102 @@
 
     <p>Para s=1</p>
     <br>
-    <h2>U envia a B:</h2>
+    <h2>U envía a B:</h2>
     <br>
-    <h3>Envia h que es la funcion hash de(A, B, C, R, S). Calcular C que es el valor que no hemos calculado anteriormente</h3>
+    <h3>Envia H que es la funcion hash de(A, B, C, R, S). Calcular C que es el valor que no hemos calculado anteriormente</h3>
     <br>
-    <button onclick="generateAndDisplayC()">Generate C:</button>
+    <button onclick="generateAndDisplayC()">Genera C:</button>
     <br>
     <label for="result16">C:</label>
     <input type="text" id="result16" readonly>
     <br>
-    <button onclick="generateAndDisplayH()">Generate H:</button>
+    <button onclick="generateAndDisplayH()">Genera H:</button>
     <br>
     <label for="result17">H:</label>
     <input type="text" id="result17" readonly>
     <br>
-    <h2>B envia a U: y=Hz +w. Calculamos z que anteriormente no lo hemos calculado:</h2>
+    <h2>B envía a U: y=Hz +w. Calculamos z que anteriormente no lo hemos calculado:</h2>
     <br>
-    <button onclick="generateAndDisplayz()">Generate z:</button>
+    <button onclick="generateAndDisplayz()">Genera z:</button>
     <br>
     <label for="result18">z:</label>
     <input type="text" id="result18" readonly>
     <br>
-    <button onclick="generatehz()">Generate y:</button>
+    <button onclick="generatehz()">Genera y:</button>
     <br>
     <label for="result19">y:</label>
     <input type="text" id="result19" readonly>
     <br>
     
     <br>
-    <p>U tiene moneda valida(A,B,C,R,S,y)
+    <p>U tiene moneda válida(A,B,C,R,S,y)
         No queremos que la moneda lleve consigo informacion de identificacion Î de la persona que la retiró del banco. No podemos tomar A=Î y necesitamos aleatorizar A estableciendo A=sÎ
         Otro problema que tenemos es que si la firma se construye cuando la estamos retirando, B puede vincularla a U y cuando se deposite la moneda B sabrá que cuenta retiro la moneda. Para este problema:
     </p>
 
     <h2>U elige dos exponentes nuevos, u y v, aparte de s, t1 y t2:</h2>
     <br>
-    <button onclick="generateAndDisplayu()">Generate u:</button>
+    <button onclick="generateAndDisplayu()">Genera u:</button>
     <br>
     <label for="result21">u:</label>
     <input type="text" id="result21" readonly>
     <br>
-    <button onclick="generateAndDisplayv()">Generate v:</button>
+    <button onclick="generateAndDisplayv()">Genera v:</button>
     <br>
     <label for="result22">v:</label>
     <input type="text" id="result22" readonly>
     <br>
     <h3>Calculamos C', R', S' y r:</h3>
     <br>
-    <button onclick="generateC2()">Generate C':</button>
+    <button onclick="generateC2()">Genera C':</button>
     <br>
     <label for="result23">C'=sC:</label>
     <input type="text" id="result23" readonly>
     <br>
-    <button onclick="generateR2()">Generate R':</button>
+    <button onclick="generateR2()">Genera R':</button>
     <br>
     <label for="result24">R'=uR + vP:</label>
     <input type="text" id="result24" readonly>
     <br>
-    <button onclick="generateS2()">Generate S':</button>
+    <button onclick="generateS2()">Genera S':</button>
     <br>
     <label for="result25">S'=suS + vA:</label>
     <input type="text" id="result25" readonly>
     <br>
-    <button onclick="generater()">Generate r:</button>
+    <button onclick="generater()">Genera r:</button>
     <br>
-    <label for="result26">r=u elevado a -1*H(A,B,C,R,S):</label>
+    <label for="result26">r=u^-1*H(A,B,C,R,S):</label>
     <input type="text" id="result26" readonly>
     <br>
 
     <p>u y v quieren cegar la firma, es decir, crear una cuasi-firma que permite a U pero no a B formar una firma valida a partir de los valores que intercambian U y B</p>
 
     <br>
-    <h2> Tras el proceso anterior,  U envia a B r y B calcula la nueva y y  la envia a U: </h2>
+    <h2> Tras el proceso anterior,  U envía a B r y B calcula la nueva y y  la envía a U: </h2>
     <br>
-    <button onclick="generatey()">Generate y=rz+w</button>
+    <button onclick="generatey()">Genera y=rz+w</button>
     <br>
     <label for="result27">y:</label>
     <input type="text" id="result27" readonly>
     <br>
     <h3>Verificar las dos ecuaciones siguientes: yP=rQ+R y yÎ=rC+S</h3>
     <br>
-    <button onclick="generateyP()">Generate yP</button>
+    <button onclick="generateyP()">Genera yP</button>
     <br>
     <label for="result28">yP:</label>
     <input type="text" id="result28" readonly>
     <br>
-    <button onclick="generaterQR()">Generate rQ+R </button>
+    <button onclick="generaterQR()">Genera rQ+R </button>
     <br>
     <label for="result30">rQ+R:</label>
     <input type="text" id="result30" readonly>
     <br>
-    <button onclick="generateyI()">Generate yÎ</button>
+    <button onclick="generateyI()">Genera yÎ</button>
     <br>
     <label for="result31">yÎ:</label>
     <input type="text" id="result31" readonly>
     <br>
-    <button onclick="generaterCS()">Generate rC+S</button>
+    <button onclick="generaterCS()">Genera rC+S</button>
     <br>
     <label for="result32">rC+S:</label> 
     <input type="text" id="result32" readonly>

@@ -66,17 +66,22 @@ function generatePointP() {
 
   let generatedPointP;
 
-  function multiplyI(generatedPointP, generatedScalarI) {
-    const result = generatedPointP.mul(generatedScalarI);
-    generatedI = result;
-    return result;
+
+  
+
+  function generateMultiplyI() {
+    const p = generatePointP();
+    const u1 = generateRandomScalar();
+    
+    const result = p.mul(u1);
+    generatedI=result;
+  
+
+    const resultInput = document.getElementById('result3');
+    resultInput.value = `(${result.x.toString()}, ${result.y.toString()})`;
+    
   }
   
-  function generateMultiplyI() {
-    const result = multiplyI(generatedPointP, generatedScalarI);
-    const resultInput = document.getElementById('result3');
-    resultInput.value = `(${result.x.toString(16)}, ${result.y.toString(16)})`;
-  }
 
   let generatedI;
 
@@ -205,10 +210,18 @@ function generateH(){
       }
       
       function generateMultiplyIu() {
-        const result = multiplyIu(generatedPointP1, generatedu1);
+        const p1 = generatePointP1();
+        const u1 = generateRandomScalaru1();
+        
+        const result = p1.mul(u1);
+        generatedIu=result;
+      
+    
         const resultInput = document.getElementById('result8');
-        resultInput.value = `(${result.x.toString(16)}, ${result.y.toString(16)})`;
+        resultInput.value = `(${result.x.toString()}, ${result.y.toString()})`;
+        
       }
+     
     
       let generatedIu;
     
@@ -360,32 +373,37 @@ function generateH(){
     
       let generatedt2;
     
-      function generateA(generateds, generatedSumaI) {
-        const result = generatedSumaI.mul(generateds);
-        gA=result;
-        return result;
-      }
+      
       
       function generatedA() {
-        const result = generateA(generateds, generatedSumaI);
+        const I = sumaI(generatedIu, generatedPointP2);
+        const s= generateRandomScalars();
+        
+        const result = I.mul(s);
+        gA=result;
+      
+    
         const resultInput = document.getElementById('result14');
-        resultInput.value = `(${result.x.toString(16)}, ${result.y.toString(16)})`;
+        resultInput.value = `(${result.x.toString()}, ${result.y.toString()})`;
+        
       }
     
       let gA;
     
-      function generatetp1(generatedt1, generatedPointP1) {
-        const result = generatedt1.mul(generatedPointP1);
-        generatedtP1=result;
-        return result;
-      }
+      
       
       function generatedtp1() {
-        const result = generatetp1(generatedt1, generatedPointP1);
-        const resultInput = document.getElementById('result15');
-        resultInput.value = `(${result.x.toString(16)}, ${result.y.toString(16)})`;
-      }
+        const t1 = generateRandomScalart1();
+        const P1= generatePointP1() ;
+        
+        const result = t1.mul(P1);
+        generatedtP1=result;
+      
     
+        const resultInput = document.getElementById('result15');
+        resultInput.value = `(${result.x.toString()}, ${result.y.toString()})`;
+        
+      }
       let generatedtP1;
     
       function generatetp2(generatedt2, generatedPointP2) {
@@ -395,9 +413,16 @@ function generateH(){
       }
       
       function generatedtp2() {
-        const result = generatetp2(generatedt2, generatedPointP2);
+        const t2 = generateRandomScalart2();
+        const P2= generatePointP2() ;
+        
+        const result = t2.mul(P2);
+        generatedtP2=result;
+      
+    
         const resultInput = document.getElementById('result16');
-        resultInput.value = `(${result.x.toString(16)}, ${result.y.toString(16)})`;
+        resultInput.value = `(${result.x.toString()}, ${result.y.toString()})`;
+        
       }
     
       let generatedtP2;
@@ -427,7 +452,7 @@ function generateH(){
         
         const result = u1.mul(s).mul(h0).add(t1);
     
-        generatedsumR = result;
+        generatedy1 = result;
         
         
         
@@ -436,7 +461,7 @@ function generateH(){
         resultInput.value = result.toString(16);
       }
 
-      let generatey1;
+      let generatedy1;
 
       function generatey2() {
         
@@ -457,23 +482,31 @@ function generateH(){
 
       let generatedy2;
 
-      function comparacion(generatey1, generatedPointP1, generatedy2, generatedPointP2, h0, gA, gB){
+      function comparacion(){
         let result;
-        const res1=generatey1.mul(generatedPointP1);
-        const res=generaetdy2.mul(generatedPointP2);
+
+        const y1=generatey1();
+        const P1= generatePointP1();
+        const y2=generatey2();
+        const P2=generatePointP2();
+        const h0=generateH();
+        const A= generatedA();
+        const B=generatedB();
+        const res1=y1.mul(P1);
+        const res=y2.mul(P2);
         const final = res1.add(res);
-        const final2=h0.mul(gA).add(gB);
+        const final2=h0.mul(A).add(B);
         if (final == final2){
             result = "pago aceptado";
         }else{
             result= "pago no aceptado";
         }
 
-
+          return result;
       }
 
       function generateComparacion() {
-        const result = comparacion(generatey1, generatedPointP1, generatedy2, generatedPointP2, h0, gA, gB) ;
+        const result = comparacion() ;
          document.getElementById('result20').value = result;
         
       }
